@@ -134,7 +134,7 @@ model = Model(inputs=inputs, outputs=outputs)
 model.compile(loss='categorical_crossentropy',optimizer=RMSprop(1e-3),metrics=['acc'])
 model.summary()
 # prepare model model saving directory
-save_dir = os.path.join(os.getcwd(), 'saved_models_'+ str(epochs) +'_epocas')
+save_dir = os.path.join(os.getcwd(), 'saved_models_'+ str(epochs) +'_epocas07')
 model_name = 'cifar10_densenet_model.{epoch:02d}.h5'
 if not os.path.isdir(save_dir):
     os.makedirs(save_dir)
